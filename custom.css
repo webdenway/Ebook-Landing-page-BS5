@@ -1,0 +1,617 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
+html {
+  font-size: 62.5%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header-area {
+  background-color: #403f3f;
+  width: 100%;
+  height: 10vh;
+  /* animated icon */
+}
+
+.header-area .mobile-menu-background {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5rem 0;
+}
+
+.header-area .logo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  color: #f7f7f7;
+}
+
+.header-area .navbar-nav .nav-link {
+  font-size: 1.6rem;
+  color: #f7f7f7;
+  display: block;
+  text-align: center;
+  margin: 1rem;
+  padding: 0.25rem 2rem;
+  border-radius: .5rem;
+}
+
+.header-area .navbar-nav .nav-link:hover {
+  background-color: #f37724;
+  border-radius: .5rem;
+}
+
+.header-area form button {
+  font-size: 1.5rem;
+  padding: 1rem 1.8rem;
+  border-color: #f7f7f7;
+  color: #f7f7f7;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.header-area .button-animate {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.header-area .animated-icon2 {
+  width: 2.5rem;
+  height: 2.5rem;
+  position: relative;
+  margin: 0px;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.header-area .animated-icon2 span {
+  background: #f7f7f7;
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+.header-area .animated-icon2 span:nth-child(1) {
+  top: 0px;
+}
+
+.header-area .animated-icon2 span:nth-child(2), .header-area .animated-icon2 span:nth-child(3) {
+  top: 10px;
+}
+
+.header-area .animated-icon2 span:nth-child(4) {
+  top: 20px;
+}
+
+.header-area .animated-icon2.open span:nth-child(1) {
+  top: 11px;
+  width: 0%;
+  left: 50%;
+}
+
+.header-area .animated-icon2.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.header-area .animated-icon2.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.header-area .animated-icon2.open span:nth-child(4) {
+  top: 11px;
+  width: 0%;
+  left: 50%;
+}
+
+.hero-area {
+  background-color: #403f3f;
+}
+
+.hero-area .hero-section {
+  padding: 3rem 1rem;
+}
+
+.hero-area .hero-section .book-image img {
+  -webkit-box-shadow: 0.5rem 0.25rem 0.7rem 0.2rem rgba(0, 0, 0, 0.7), 0 0.6rem 2rem 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0.5rem 0.25rem 0.7rem 0.2rem rgba(0, 0, 0, 0.7), 0 0.6rem 2rem 0 rgba(0, 0, 0, 0.5);
+}
+
+.hero-area .hero-section .book-image {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.hero-area .hero-description {
+  text-align: center;
+  color: #f7f7f7;
+  margin: 3em;
+}
+
+.hero-area h5 {
+  margin: .5rem 0;
+  color: #ffa366;
+}
+
+.hero-area h2 {
+  font-size: 2rem;
+  margin-top: 5rem;
+}
+
+.hero-area p {
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: .1rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.hero-area .chapter-info {
+  margin-top: 2.5rem;
+}
+
+.hero-area .chapter-info span {
+  padding-right: .5rem;
+  letter-spacing: .1rem;
+  display: block;
+}
+
+.hero-area .chapter-info .btn {
+  background: #ffa366;
+  color: #f7f7f7;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: .5rem 2rem;
+}
+
+.hero-area .chapter-info .btn:hover {
+  background-color: #fa7923;
+}
+
+.company-logo {
+  background-color: #f6f6f6;
+}
+
+.company-logo .all-company-logo .row > div {
+  width: 15%;
+}
+
+/*==== about-book====*/
+.about-book p .author-name {
+  font-size: 1.2rem;
+  color: #ffa366;
+  font-style: normal;
+}
+
+.about-book h2 {
+  font-size: 2rem;
+  color: #2d2d2d;
+  font-weight: bold;
+}
+
+.about-book .quote-img {
+  width: 5%;
+}
+
+.about-book p {
+  font-size: 1.2rem;
+}
+
+.about-book .image-container {
+  width: 60%;
+}
+
+/*============chapter-area===============*/
+.chapter-area .subject {
+  background-color: #f7f7f7;
+  margin: .1rem 0;
+  padding: 2rem 0;
+}
+
+.chapter-area .chapter-area-title h2, .chapter-area .chapter-area-title p {
+  color: #2d2d2d;
+}
+
+.chapter-area h2 {
+  font-size: 2rem;
+  margin-top: 3rem;
+  font-weight: bold;
+  color: #2d2d2d;
+}
+
+.chapter-area h5 {
+  font-size: 1.7rem;
+  color: #2d2d2d;
+}
+
+.chapter-area p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  letter-spacing: .1rem;
+  color: #2d2d2d;
+  text-align: center;
+  padding: .5rem;
+}
+
+.chapter-area .chapter-01 {
+  background: #ffa366;
+}
+
+.chapter-area .chapter-01 h2, .chapter-area .chapter-01 h5, .chapter-area .chapter-01 p {
+  color: #f6f6f6;
+}
+
+/*========Book-video-review */
+.video-review {
+  background-color: #403f3f;
+}
+
+.video-review .video-source-poster video {
+  width: 100%;
+}
+
+.video-review .video-review-title {
+  text-align: center;
+}
+
+.video-review .video-review-title h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #f6f6f6;
+}
+
+.video-review .video-review-title p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  letter-spacing: .1rem;
+  color: #f6f6f6;
+  text-align: center;
+  padding: .5rem;
+}
+
+.video-review .ready-to-buy {
+  margin-top: 5rem;
+}
+
+.video-review .ready-to-buy h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #f6f6f6;
+}
+
+.video-review .ready-to-buy p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  letter-spacing: .1rem;
+  color: #f6f6f6;
+  text-align: center;
+  padding: .5rem;
+}
+
+.video-review .form-area form input[type=text], .video-review .form-area form input[type=email] {
+  background-color: #4a4949;
+  border-color: #717070;
+}
+
+.video-review .form-area form input[type=submit] {
+  background-color: #ffa366;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+/*============author area============*/
+.author .card h2 {
+  font-size: 1.8rem;
+  color: #ffa366;
+}
+
+.author h2 {
+  font-size: 1.8rem;
+  color: 403f3f;
+}
+
+.author p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  letter-spacing: .1rem;
+  color: #373737;
+}
+
+/*=================footer==========*/
+.footer-section {
+  background-color: #403f3f;
+}
+
+.footer-section .footer-area h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.8rem;
+  color: #f6f6f6;
+}
+
+.footer-section .footer-area p {
+  margin-bottom: 1rem;
+  color: #f6f6f6;
+}
+
+.footer-section .footer-area .btn {
+  font-size: 1.2rem;
+  color: #f7f7f7;
+  background-color: #ffa366;
+  padding: .5rem 2rem;
+}
+
+.footer-section .footer-area .btn:hover {
+  background-color: #e9782d;
+}
+
+.footer-section .footer-area hr {
+  border: 1px solid;
+  border-color: #f6f6f6;
+}
+
+.footer-section .footer-area a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: .5rem;
+}
+
+.footer-section .footer-area a:hover {
+  color: #ffa366;
+}
+
+/*=====media-query==========*/
+@media (min-width: 576px) {
+  /*===nav-section====*/
+  .navbar-container .logo {
+    font-size: 1.8rem;
+  }
+  /*===hero-section====*/
+  .hero-area {
+    padding: 5rem 0 7rem;
+  }
+  .hero-area .hero-section .book-image {
+    width: 90%;
+  }
+  .hero-area .hero-description {
+    margin: 0;
+  }
+  .hero-area .hero-description h2 {
+    font-size: 2.3rem;
+    margin-top: 0;
+    padding: 0;
+  }
+  .hero-area .hero-description p {
+    font-size: 1.2rem;
+    padding: 0 1rem;
+    text-align: justify;
+  }
+  .hero-area .hero-description .btn {
+    padding: .5rem 5rem;
+    margin-top: .8rem;
+  }
+  /*===About-Book====*/
+  .about-book {
+    padding-top: 4rem;
+  }
+  .about-book h2 {
+    font-size: 2.5rem;
+  }
+  .about-book p {
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+  .about-book .image-container {
+    width: 90%;
+  }
+  /*=======Chapter-area==========*/
+  .chapter-area .subject {
+    background-color: transparent;
+  }
+  .chapter-area .row > div {
+    padding: 6rem 0;
+  }
+  .chapter-area .row > div:first-child {
+    padding: 0;
+  }
+  .chapter-area .row > div:nth-child(2) {
+    padding: 3rem 0;
+  }
+  .chapter-area .row > div:nth-child(4) {
+    border-bottom: 1px solid #d5d5d5;
+  }
+  .chapter-area .row > div:nth-child(7) {
+    border-left: 1px solid #d5d5d5;
+  }
+  .chapter-area .row > div:nth-child(5) {
+    border-top: .1rem solid #d5d5d5;
+    border-bottom: .1rem solid #d5d5d5;
+    border-left: .1rem solid #d5d5d5;
+  }
+  .chapter-area .chapter-area-title h2 {
+    font-size: 2.5rem;
+  }
+  .chapter-area .chapter-area-title p {
+    font-size: 1.2rem;
+    margin: 3rem 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .header-area header nav .mobile-menu-background {
+    background-color: transparent;
+  }
+  .navbar-container .logo {
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+  .header-area .navbar-nav .nav-link {
+    padding: .25rem 1rem;
+    margin: 0;
+  }
+  .hero-area .hero-description h2 {
+    font-size: 2.8rem;
+    margin-top: 0;
+    padding: 0;
+  }
+  .hero-area .hero-description .btn {
+    padding: 1rem 5rem;
+    margin-top: .8rem;
+  }
+  .about-book h2 {
+    font-size: 2.8rem;
+  }
+  .about-book .image-container {
+    width: 75%;
+  }
+  .chapter-area .chapter-area-title h2 {
+    font-size: 2.8rem;
+  }
+  .chapter-area .chapter-area-title p {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero-area {
+    padding: 5rem 0 7rem;
+  }
+  .hero-area .hero-section .book-image {
+    width: 80%;
+  }
+  .hero-area .hero-description span {
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 3rem;
+  }
+  .hero-area .hero-description h2 {
+    font-size: 3.6rem;
+    margin-top: 0;
+    padding: 0;
+  }
+  .hero-area .hero-description h5 {
+    font-size: 1.8rem;
+    font-style: italic;
+  }
+  .hero-area .hero-description p {
+    font-size: 1.8rem;
+    padding-right: 3rem;
+    text-align: justify;
+    margin-top: 5rem;
+  }
+  .hero-area .hero-description .btn {
+    padding: 1rem 5rem;
+    margin-top: .2rem;
+    font-size: 1.4rem;
+  }
+  /*==============About-book==============*/
+  .about-book {
+    padding: 10rem 0 5rem;
+  }
+  .about-book h2 {
+    font-size: 3.6rem;
+  }
+  .about-book p {
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+  .about-book .image-container {
+    width: 50%;
+  }
+  .chapter-area {
+    margin-top: 5rem;
+  }
+  .chapter-area .row > div {
+    padding: 9rem 0;
+  }
+  .chapter-area .row > div:nth-child(5) {
+    border-top: 0;
+    border-left: 0;
+    border-bottom: 0;
+    border-right: .1rem solid #d5d5d5;
+  }
+  .chapter-area .row > div:nth-child(3) {
+    border-bottom: .1rem solid #d5d5d5;
+    border-right: .1rem solid #d5d5d5;
+  }
+  .chapter-area .chapter-area-title h2 {
+    font-size: 3.6rem;
+  }
+  .chapter-area .chapter-area-title p {
+    font-size: 1.2rem;
+    margin-bottom: 5rem;
+  }
+  /*==================== video review================== */
+  .video-review {
+    margin-top: 5rem;
+    padding: 8rem 3rem;
+  }
+  .video-review .video-review-title h2 {
+    font-size: 3rem;
+  }
+  .video-review .ready-to-buy h2 {
+    font-size: 2.8rem;
+  }
+  .video-review .form-area form input {
+    padding: 2rem 1rem;
+  }
+  .video-review .form-area form input[type="submit"]:hover {
+    background-color: #f06e17;
+  }
+  /*==================== Author area================== */
+  .author .author-speech h2 {
+    font-size: 3rem;
+  }
+  .author .author-speech p {
+    font-size: 1.4rem;
+    margin-top: 3rem;
+  }
+  /*==================== footer area================== */
+  .footer-section {
+    margin-top: 8rem;
+  }
+  .footer-section .footer-area h2 {
+    font-size: 3rem;
+    letter-spacing: .2rem;
+    margin-top: 3rem;
+  }
+  .footer-section h2 + p {
+    font-size: 1.4rem;
+    letter-spacing: .2rem;
+  }
+  .footer-section .footer-area .btn {
+    padding: 1rem 6rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+  }
+  .footer-section .footer-area .btn:hover {
+    background-color: #f06e17;
+  }
+}
+/*# sourceMappingURL=custom.css.map */
